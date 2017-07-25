@@ -1,9 +1,9 @@
-edu/zju/sprint/exception/SpringException.class
+edu/zju/sprint/mvc/hello/HelloController.class
+edu/zju/sprint/mvc/redirection/WebController.class
 edu/zju/sprint/servlet/SimpleServletFilter.class
-edu/zju/sprint/hello/HelloController.class
-edu/zju/sprint/form/StudentController.class
+edu/zju/sprint/mvc/exception/SpringException.class
 edu/zju/sprint/servlet/SimpleServlet.class
-edu/zju/sprint/form/Student.class
-edu/zju/sprint/page/StaticPageController.class
+edu/zju/sprint/mvc/page/StaticPageController.class
+edu/zju/sprint/mvc/form/Student.class
 edu/zju/sprint/servlet/HPServlet.class
-edu/zju/sprint/redirection/WebController.class
+edu/zju/sprint/mvc/form/StudentController.class

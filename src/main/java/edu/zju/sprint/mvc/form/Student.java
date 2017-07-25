@@ -1,4 +1,4 @@
-package edu.zju.sprint.form;
+package edu.zju.sprint.mvc.form;
 
 public class Student
 {

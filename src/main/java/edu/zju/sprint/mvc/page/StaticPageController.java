@@ -1,4 +1,4 @@
-package edu.zju.sprint.page;
+package edu.zju.sprint.mvc.page;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

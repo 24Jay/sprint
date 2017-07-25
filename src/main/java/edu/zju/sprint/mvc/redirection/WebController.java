@@ -1,4 +1,4 @@
-package edu.zju.sprint.redirection;
+package edu.zju.sprint.mvc.redirection;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

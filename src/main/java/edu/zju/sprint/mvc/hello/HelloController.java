@@ -1,4 +1,4 @@
-package edu.zju.sprint.hello;
+package edu.zju.sprint.mvc.hello;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

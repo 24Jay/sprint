@@ -1,4 +1,4 @@
-package edu.zju.sprint.exception;
+package edu.zju.sprint.mvc.exception;
 
 public class SpringException extends RuntimeException
 {
