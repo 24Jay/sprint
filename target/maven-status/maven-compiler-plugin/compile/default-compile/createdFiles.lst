@@ -1,5 +1,8 @@
+edu/zju/sprint/log/TestLogger.class
 edu/zju/sprint/mvc/hello/HelloController.class
+edu/zju/sprint/log/Log4jInit.class
 edu/zju/sprint/mvc/redirection/WebController.class
+edu/zju/sprint/mvc/ThinkInDispatcherServlet.class
 edu/zju/sprint/servlet/SimpleServletFilter.class
 edu/zju/sprint/mvc/exception/SpringException.class
 edu/zju/sprint/servlet/SimpleServlet.class

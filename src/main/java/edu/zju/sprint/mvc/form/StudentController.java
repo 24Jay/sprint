@@ -1,5 +1,7 @@
 package edu.zju.sprint.mvc.form;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -10,14 +12,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 import edu.zju.sprint.mvc.exception.SpringException;
 
-
 @Controller
 public class StudentController
 {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(StudentController.class);
+
 	@RequestMapping(value = "/student", method = RequestMethod.GET)
 	public ModelAndView student()
 	{
+		LOGGER.info("StudentController student()");
 		return new ModelAndView("student", "command", new Student());
 	}
 
