@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:websocket="http://www.springframework.org/schema/websocket"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
         http://www.springframework.org/schema/beans/spring-beans-3.1.xsd 
         http://www.springframework.org/schema/mvc 
@@ -12,10 +14,14 @@
         http://www.springframework.org/schema/aop 
         http://www.springframework.org/schema/aop/spring-aop-3.1.xsd 
         http://www.springframework.org/schema/tx 
-        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd ">
+        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/websocket  
+        http://www.springframework.org/schema/websocket/spring-websocket.xsd">
 
 
 	<context:component-scan base-package="edu.zju.sprint" />
+
 
 
 	<!-- ViewResolver -->
@@ -46,6 +52,15 @@
 
 
 
-	<!-- <bean name="/hello" class="edu.zju.sprint.hello.HelloController" /> -->
+	<!-- <bean name="/hello" class="edu.zju.sprint.mvc.hello.HelloController" 
+		/> -->
+																																				
+	<websocket:handlers>
+		<websocket:mapping handler="macroHandler" path="/macro" />
+		<websocket:handshake-interceptors>
+			<bean class="org.springframework.samples.HandshakeInterceptor"></bean>
+		</websocket:handshake-interceptors>
+	</websocket:handlers>
+	<bean id="macroHandler" class="edu.zju.sprint.websocket.MacroHandler" />
 
 </beans>

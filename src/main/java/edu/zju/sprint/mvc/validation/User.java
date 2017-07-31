@@ -1,0 +1,66 @@
+package edu.zju.sprint.mvc.validation;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+/***
+ * javax.validation.constraints
+ * 
+ * @author jay
+ *
+ */
+public class User
+{
+
+	private int id;
+
+	@NotNull
+	private String name;
+
+	@NotNull
+	@Size(min = 5, max = 25)
+	private String password;
+
+	public User(int id, String n, String p)
+	{
+		this.id = id;
+		this.name = n;
+		this.password = p;
+	}
+
+	public User()
+	{
+		this(0, null, null);
+	}
+	
+	public int getId()
+	{
+		return id;
+	}
+
+	public void setId(int id)
+	{
+		this.id = id;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public String getPassword()
+	{
+		return password;
+	}
+
+	public void setPassword(String password)
+	{
+		this.password = password;
+	}
+
+}

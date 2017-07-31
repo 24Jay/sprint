@@ -11,8 +11,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
+			<version>4.12</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -46,8 +45,43 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.22</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+			<version>4.3.5.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+			<version>4.3.5.RELEASE</version>
+		</dependency>
 	</dependencies>
+
+
+
+
 	<build>
 		<finalName>sprint</finalName>
 	</build>
+
+	<repositories>
+		<!-- repository> <id>companyname.lib1</id> <url>https://repo.maven.apache.org/maven2/</url> 
+			</repository -->
+
+		<repository>
+			<id>companyname.lib2</id>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+	</repositories>
 </project>
